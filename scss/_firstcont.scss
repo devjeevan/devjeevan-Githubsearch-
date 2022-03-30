@@ -1,0 +1,106 @@
+
+
+
+
+.main_container{
+    .firstdiv{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-transform: capitalize;
+        padding: 1rem;
+          transition: all 0.4s ease;
+         font-family: var(--font-family);
+         margin-bottom: 1rem;
+
+        .logo{
+          font-size:1.5rem;
+          font-weight: bold;
+          letter-spacing: 1px;
+          color: var(--mainblack);
+            transition: all 0.4s ease;
+        }
+
+        .theme{
+            display: flex;
+            align-items:center;
+            column-gap: .4rem;
+              transition: all 0.4s ease;
+            p{
+                font-weight: bold;
+                color: var(--color-text);
+                  transition: all 0.4s ease;
+            }
+
+            .themebtn{
+                width: 1.5rem;
+                  transition: all 0.4s ease;
+                 
+            }
+        }
+    }
+
+    .searcharea{
+        display: flex;
+        justify-content: space-between;
+        box-shadow: var(--shadow);
+        margin-bottom: 1rem;
+        padding: 1rem 1rem;
+        font-family: var(--font-family);
+        text-transform: capitalize;
+        background:var(--fff);
+        border-radius: 10px;
+          transition: all 0.4s ease;
+
+        .inputbtn{
+            flex: 1;
+            display: flex;
+            column-gap: .8rem;
+            align-items: center;
+
+            .maininput{
+                border: none;
+                outline: none;
+                padding: .5rem 1rem;
+                max-width: 300px;
+                background: transparent;
+
+                &::placeholder{
+                    text-transform: capitalize;
+                    color: var(--color-text);
+                }
+            }
+
+            .searcicon{
+                 width: 1.5rem;
+                 height: 1.5rem;
+            }
+        }
+        .searchbtn{
+            border: none;
+            
+            outline: none;
+            text-transform: capitalize;
+            background: var(--color-button);
+            color: var(--color-background);
+            padding: .5rem 1rem;
+            border-radius: 10px;
+        }
+    }
+}
+
+
+@media (max-width:480px){
+ .main_container{
+    padding: 0px 1rem;
+    .searcharea{
+        .inputbtn{
+            column-gap: 0rem;
+
+            .maininput{
+                max-width: 150px;
+            }
+        }
+    }
+ }
+}
